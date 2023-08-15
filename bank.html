@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-[#dcfce7]">
+    <header>
+        <h1 class="text-5xl text-center mt-24">Let's get some <span class="font-semibold text-orange-600 ">Moooneeyyyy!</span></h1>
+    </header>
+    <main>
+        <!-- Update section -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-9/12 mx-auto mt-12">
+                <!-- deposite -->
+                <div class="bg-[#22d3ee] text-white p-8  rounded  text-center">
+                    <h4 class="text-3xl underline underline-offset-8 mb-2">Deposit</h4>
+                    <p  class="text-5xl">$<span id="total-deposit">00</span></p>
+                </div>
+                <!-- withdraw -->
+                <div class="bg-[#f9a8d4] text-white p-8  rounded  text-center">
+                    <h4  class="text-3xl underline underline-offset-8 mb-2">Withdraw</h4>
+                    <p class="text-5xl">$<span id="total-withdraw">00</span></p>
+                </div>
+                <!-- Balance -->
+                <div class="bg-[#fdba74] text-white p-8  rounded  text-center">
+                    <h4 class="text-3xl underline underline-offset-8 mb-2">Balance</h4>
+                    <p class="text-5xl">$<span id="total-balance" >1240</span></p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- deposit -withdraw section -->
+        <section>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-9/12 mx-auto mt-12">
+                <!-- deposit -->
+                <div class="bg-[#fda4af] text-white p-8  rounded text-center lg:text-left">
+                    <h4 class="text-3xl underline underline-offset-8 mb-2">Please Deposit</h4>
+                    <input class="bg-[#f3f4f6] rounded mt-2 w-9/12 p-2 text-black " type="text"
+                    placeholder="$ Deposited amount"
+                    id="deposited-amount"><br>
+                    <button class="bg-[#be185d] hover:bg-[#db2777] text-white px-8 py-2 rounded mt-2" id="btn-deposit">Deposit</button>
+                    
+                </div>
+                <!-- withdraw -->
+                <div class="bg-[#c4b5fd] text-white p-8  rounded text-center lg:text-left">
+                    <h4 class="text-3xl underline underline-offset-8 mb-2"> Please Withdraw</h4>
+                    <input class="bg-[#f3f4f6] rounded mt-2 w-9/12 p-2 text-black " type="text"
+                    placeholder="$ Withdraw amount"
+                    id="Withdraw-amount"> <br>
+                    <button class="bg-[#7e22ce] hover:bg-[#9333ea] text-white px-8 py-2 rounded mt-2" id="btn-withdraw">Withdraw</button>
+                    
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="JS/deposit.js"></script>
+    <script src="JS/withdraw.js"></script>
+    
+</body>
+</html>
